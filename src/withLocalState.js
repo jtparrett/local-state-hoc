@@ -9,16 +9,11 @@ export default (Component) => {
         }
 
         render(){
-            const {
-                setLocalState,
-                ...restProps
-            } = this.props;
-
             return (
                 <Component 
                     localState={this.state} 
                     setLocalState={this.setLocalState} 
-                    {...restProps} />
+                    {...this.props} />
             );
         }
     }
