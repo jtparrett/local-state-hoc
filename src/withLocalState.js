@@ -4,7 +4,7 @@ export default (Component) => {
     return class extends React.Component {
         state = {}
 
-        setLocalState(...params){
+        setLocalState = (...params) => {
             this.setState(...params);
         }
 
