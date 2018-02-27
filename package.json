@@ -1,0 +1,23 @@
+{
+  "name": "local-state-hoc",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel -d lib src"
+  },
+  "repository": {
+    "url": "git@github.com:jtparrett/local-state-hoc.git",
+    "type": "git"
+  },
+  "author": "jtparrett <jtparrett@me.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
