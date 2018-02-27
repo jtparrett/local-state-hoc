@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default (Component) => {
+export default (Component, initialState = {}) => {
     return class extends React.Component {
-        state = {}
+        state = initialState
 
         setLocalState = (...params) => {
             this.setState(...params);
