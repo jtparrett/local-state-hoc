@@ -15,10 +15,10 @@ const defaultLocalState = {
   index: 0
 }
 
-const mapStateToProps = (_, { localState = defaultLocalState, setLocalState }) => ({
+const mapStateToProps = (_, { localState, setLocalState }) => ({
   updateIndex: () => setLocalState({ index: localState.index + 1 }),
   index: localState.index
 })
 
-export default withLocalState(connect(mapStateToProps)(View))
+export default withLocalState(connect(mapStateToProps)(View), defaultLocalState)
 ```
